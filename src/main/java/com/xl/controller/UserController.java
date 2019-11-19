@@ -15,8 +15,15 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    /**
+     *查找所有的用户
+     *
+     * @return
+     */
     @RequestMapping("/findAll")
     public List<User> findAll() {
+
         return userService.findAll();
+
     }
 }
